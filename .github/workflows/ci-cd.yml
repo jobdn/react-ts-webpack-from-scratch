@@ -28,14 +28,17 @@ jobs:
 
       - name: Tests
         run: npm run test
+
   test1:
     runs-on: ubuntu-latest
+    needs: deploy
     steps:
       - name: just echo one
         run: echo one one one
 
   test2:
     runs-on: ubuntu-18.04
+    needs: test1
     steps:
       - name: just echo two
         run: echo two two two
