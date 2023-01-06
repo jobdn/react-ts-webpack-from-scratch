@@ -28,3 +28,12 @@ jobs:
 
       - name: Tests
         run: npm run test
+  test1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo one one one
+
+  test2:
+    runs-on: ubuntu-18.04
+    steps:
+      - run: echo two two two
