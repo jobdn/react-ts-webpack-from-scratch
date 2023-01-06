@@ -5,6 +5,10 @@ on:
     branches:
       - master
       - dev
+  pull_request:
+    types:
+      - opened
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
