@@ -14,8 +14,9 @@ jobs:
     runs-on: ubuntu-latest
     env:
       fucking_secret: ${{secrets.JWT_ACCESS_SECRET}}
+      today: Friday
     steps:
-      - run: echo just run the secret $fucking_secret
+      - run: echo "just run the secret $fucking_secret and today is $today"
   deploy:
     runs-on: ubuntu-latest
     steps:
