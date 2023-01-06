@@ -10,6 +10,10 @@ on:
       - opened
 
 jobs:
+  just-print:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo just run the secret ${{secrets.JWT_ACCESS_SECRET}}
   deploy:
     runs-on: ubuntu-latest
     steps:
